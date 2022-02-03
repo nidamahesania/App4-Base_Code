@@ -53,12 +53,12 @@ blah, blah, blah, blah
 	
 		//this function is used to display the results that you get to determine if you have psoriasis or eczema
 		function displayResults(){
-			//these variables are used to calculate the percentage for both allergies and cold at the end of the questionnaire 
-			//the numbers that are stored will be divided by four and multiplied by 100 to get the percent of having a cold or allergies 
-			var coldPercent = cold_count/4 * 100; 
-			var allergyPercent = allergy_count/4 * 100; 
+			//these variables are used to calculate the percentage for both psoriasis and eczema at the end of the questionnaire 
+			//the numbers that are stored will be divided by four and multiplied by 100 to get the percent of having psoriasis or eczema
+			var psoriasisPercent = psoriasis_count/4 * 100; 
+			var eczemaPercent = eczema_count/4 * 100; 
 			
-			//outputs the results recorded in the allergy_count and cold_count variables by inserting new variables in the HTML code 
+			//outputs the results recorded in the psoriasis_count and eczema_count variables by inserting new variables in the HTML code 
 			//<br> means line break 
 			var resultText = document.getElementById("results");
 			resultText.innerHTML = "Probability it is allergies = "+ allergyPercent + "%" + "<br> Probability it is a cold = "+ coldPercent + "%" + "<br>" + "<br> Your diagnostic test is complete!";
