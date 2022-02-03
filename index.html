@@ -32,26 +32,26 @@ blah, blah, blah, blah
 
 
 <script>
-	//added variables to define allergy and cold count 
+	//added variables to define psoriasis and eczema count 
 	//set them equal to 0 to make sure initial count is 0 
-        var allergy_count = 0;
-        var cold_count = 0;
+        var psoriasis_count = 0;
+        var eczema_count = 0;
 
 	
-	//this functions adds up the answers to the questions to count for allergy
-	//the allergyAdd function adds 1 count to the variable allergy count 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+	//this functions adds up the answers to the questions to count for psoriasis
+	//the psoriasisAdd function adds 1 count to the variable psoriasis count 
+        function psoriasisAdd(){
+            psoriasis_count = psoriasis_count + 1;
 
         }
 	
-	//this functions adds up the answers to the questions to count for cold
-	//the coldAdd function adds 1 count to the variable cold count 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+	//this functions adds up the answers to the questions to count for eczema
+	//the eczemaAdd function adds 1 count to the variable eczema count 
+        function eczemaAdd(){
+            eczema_count = eczema_count + 1;
         }
 	
-		//this function is used to display the results that you get to determine if you have a cold or allergies
+		//this function is used to display the results that you get to determine if you have psoriasis or eczema
 		function displayResults(){
 			//these variables are used to calculate the percentage for both allergies and cold at the end of the questionnaire 
 			//the numbers that are stored will be divided by four and multiplied by 100 to get the percent of having a cold or allergies 
